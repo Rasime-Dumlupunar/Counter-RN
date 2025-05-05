@@ -1,12 +1,17 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Counter from '../screens/counter';
+
+import New from '../screens/new';
+import Flex from '../screens/flex';
+import Dimesions from '../screens/dimesions';
 
 const Stack = createNativeStackNavigator();
 
 function RootNavigation() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Counter" component={Counter} />
+      <Stack.Screen name="New" component={New} />
+      <Stack.Screen name="Dimesions" component={Dimesions} />
+      <Stack.Screen name="Flex" component={Flex} />
     </Stack.Navigator>
   );
 }
